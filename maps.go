@@ -9,7 +9,10 @@ func main(){
 		"Chiamaka": 43,
 	}
 	fmt.Println(m["Chiamaka"])
-	v, ok := m["Nnamdi"]
-	fmt.Println(v)
-	fmt.Println(ok)
+	// A pattern to take note of for if statement
+	if v, ok := m["Nnamdi"]; ok {
+		fmt.Println("Its is ok boom", v)
+	}
+	//fmt.Println(v)
+	//fmt.Println(ok)
 }
